@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff07;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff18;
+}
+
+body {
+    background-image: linear-gradient(#000212, #010d26);
+    overflow: hidden;
+}
+
+.mainBox {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.userContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max(20vw, 300px);
+    height: max(30vh, 150px);
+    border: 1px solid #ffffff38;
+    border-radius: 15px;
+    background-color: #ffffff05;
+    color: #ffffff;
+}
+
+.userContainer p[id="nameTitle"] {
+    position: absolute;
+    margin-top: min(-15vh, -45px);
+    font-size: max(36px, 28px);
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+}
+
+.userContainer input {
+    position: absolute;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff38;
+    background-color: #0002123d;
+    border-radius: 15px;
+    height: 20px;
+    width: max(9vw, 228px);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: clip;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+}
+
+.userContainer input:hover {
+    border-color: #ffffff6c;
+}
+.userContainer input:focus {
+    border-color: #ffffff81;
+}
+
+.userContainer button {
+    position: absolute;
+    margin-top: 70px;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff38;
+    background-color: #0002123d;
+    border-radius: 15px;
+    height: 23px;
+    width: max(11vw, 250px);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: clip;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    transition: all 0.1s ease 0s;
+}
+
+.userContainer button:hover {
+    border-color: #ffffff6c;
+    background-color: #ffffff0e;
+}
+
+.userContainer button:active {
+    border-color: #ffffff81;
+    background-color: #ffffff18;
+}
+
+.userContainer p[id="nameWarning"] {
+    display: none;
+    position: absolute;
+    margin-top: max(20vh, 130px);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+    color: #ff0000;
+}
+
+.chatContainer {
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: max(30vw, 400px);
+    height: max(70vh, 150px);
+    border: 1px solid #ffffff38;
+    border-radius: 15px;
+    background-color: #ffffff05;
+    color: #ffffff;
+}
+
+.chatContainer input {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-left: -80px;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff38;
+    background-color: #0002123d;
+    border-radius: 15px;
+    height: 20px;
+    width: max(23vw, 270px);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: clip;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+}
+
+.chatContainer input:hover {
+    border-color: #ffffff6c;
+}
+.chatContainer input:focus {
+    border-color: #ffffff81;
+}
+
+.chatContainer button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-right: min(-25vw, -300px);
+    margin-top: 70px;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff38;
+    background-color: #0002123d;
+    border-radius: 15px;
+    height: 23px;
+    width: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: clip;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    transition: all 0.1s ease 0s;
+}
+
+.chatContainer button:hover {
+    border-color: #ffffff6c;
+    background-color: #ffffff0e;
+}
+
+.chatContainer button:active {
+    border-color: #ffffff81;
+    background-color: #ffffff18;
+}
+
+.chatMessages {
+    display: grid;
+    width: calc(100% - 30px);
+    height: calc(100% - 75px);
+    margin-bottom: 20px;
+    padding-right: 2px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, auto);
+    grid-auto-rows: minmax(min-content, max-content);
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatMessages p {
+    display: flex;
+    height: max-content;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.messageInputFeild {
+    position: absolute;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff38;
+    background-color: #0002123d;
+    border-radius: 15px;
+    height: 20px;
+    width: max(9vw, 228px);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: clip;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <title>Global Chat - 123 Game.dev</title>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="mainBox" id="main">
+        <div class="chatContainer" id="chatContainer">
+            <div class="chatMessages" id="chatMessages"></div>
+            <input type="text" placeholder="Send a message" id="messageInput">
+            <button id="messageSubmit" onclick="sendMessage()">Send</button>
+        </div>
+        <div class="userContainer" id="userContainer">
+            <p id="nameTitle">Pick a name</p>
+            <input type="text" placeholder="Name" id="nameInput">
+            <button id="nameSubmit">Submit</button>
+            <p id="nameWarning">Please input a name.</p>
+        </div>
+    </div>
+    <script defer src="manager.js"></script>
+</body>
+</html>
