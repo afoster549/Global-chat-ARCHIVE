@@ -1,4 +1,3 @@
 # Global chat ARCHIVE
-Global Chat was a very simple chat room that I used to host on my website.
 
-The API for it can be found [here](https://github.com/afoster549/Global-chat-ARCHIVE/tree/api)
+The API was very simple it took a string sent by the client and brodcast that out to all the other clients then wrote it to a txt file.
