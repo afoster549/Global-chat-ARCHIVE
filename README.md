@@ -1,4 +1,4 @@
-# Global-chat
-This is the webpage for the global chat on my website.
+# Global chat ARCHIVE
+Global Chat was a very simple chat room that I used to host on my website.
 
-You can use it here https://global.123game.dev
+The API for it can be found [here](https://github.com/afoster549/Global-chat-ARCHIVE/tree/api)
